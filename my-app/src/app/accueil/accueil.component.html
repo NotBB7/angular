@@ -1,0 +1,24 @@
+<a href="#" class="navbar-brand d-flex align-items-center">
+    <strong>{{monTitre}}</strong>  
+</a>
+
+
+
+
+<div class="container">
+    <h1>{{monIntroduction}}</h1>
+    <p class="lead text-muted">{{maPhraseAccroche}}</p>
+
+    <div class="form-group">
+        <input type="text" class="form-control" id="paysSaisi" [formControl]="champSaisi">
+        </div>
+    
+    <p><a (click)="afficherChampSaisi()" class="btn btn-primary my-2">Valider</a></p>
+</div>
+
+    <div class="card-text text-center ">
+    <h2>Capitale : {{capitale}}</h2>
+    <h2>Poulation : {{population}} </h2>
+    <h2>Devise : {{monnaie}}</h2>
+    <h2>Langue : {{langue}}</h2>
+    </div>
